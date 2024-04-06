@@ -17,5 +17,3 @@ l.prev(la).on('click',function(){
 	setTimeout(()=>{$(this).html(txt)}, 1000);
 	$(this).html(dtl[li]);
 });
-let rset=(val)=>{$(this).html(val)};
-// function rset(val){}
