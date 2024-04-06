@@ -9,3 +9,11 @@ function c(s,f,t){return parseInt(s, f).toString(t);}
 function as(n){if(n==''){dv='',bv='',hv='',av='';}d.val(dv);b.val(bv);h.val(hv);a.val(av);}
 
 l.addClass('col-1 col-form-label'); l.prev(la).addClass('offset-3'); l.next(la).addClass('offset-1'); x.addClass('form-control col-3');$("<br><br>").insertAfter(x);
+
+var dtl = {0:'Sandeep',2:'Kumar',4:'Jalandhar',6:'MCPC'};
+l.prev(la).on('click',function(){
+	var li=$(this).index(la);
+	setTimeout(rset.bind(this,$(this).html()), 1000);
+	$(this).html(dtl[li]);
+});
+function rset(val){$(this).html(val);}
