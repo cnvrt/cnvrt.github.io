@@ -13,7 +13,8 @@ l.addClass('col-1 col-form-label'); l.prev(la).addClass('offset-3'); l.next(la).
 var dtl = {0:'Sandeep',2:'Kumar',4:'Jalandhar',6:'MCPC'};
 l.prev(la).on('click',function(){
 	var li=$(this).index(la);
-	setTimeout(rset.bind(this,$(this).html()), 1000);
+	var txt = $(this).html();
+	setTimeout(()=>{$(this).html(txt)}, 1000);
 	$(this).html(dtl[li]);
 });
 let rset=(val)=>{$(this).html(val)};
